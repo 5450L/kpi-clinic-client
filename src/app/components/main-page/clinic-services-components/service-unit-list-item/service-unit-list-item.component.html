@@ -1,0 +1,12 @@
+<a
+  class="unit-list-item"
+  [style]="{
+    'background-color': 'rgba(0, 0, 0, 0.4)',
+    'background-blend-mode': 'overlay',
+    'background-image': unitListItem.image | backgroundImage,
+  }"
+>
+  <h3 class="unit-list-item-title">
+    {{ unitListItem.name }}
+  </h3>
+</a>

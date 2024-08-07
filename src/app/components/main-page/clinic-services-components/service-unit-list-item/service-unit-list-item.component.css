@@ -1,0 +1,19 @@
+.unit-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 220px;
+  background-position: center;
+  background-size: contain;
+}
+
+.unit-list-item-title {
+  max-width: 70%;
+  font-family: muller, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
