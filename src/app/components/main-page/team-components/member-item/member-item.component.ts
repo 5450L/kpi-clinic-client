@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MatCarouselSlide, MatCarouselSlideComponent } from 'ng-mat-carousel';
 
 @Component({
   selector: 'member-item',

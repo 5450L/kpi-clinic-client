@@ -13,7 +13,6 @@ export class ServiceUnitListItemComponent implements OnInit {
   @Input({ required: true }) unitListItem!: UnitListItem;
 
   ngOnInit(): void {
-    console.log('unitListItem', this.unitListItem);
   }
 
 }
