@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { UnitListItem } from '../../../../models/units/unit.model';
 import { ServiceUnitListItemComponent } from "../service-unit-list-item/service-unit-list-item.component";
+import { UnitListItem } from '../../../../models/unit.model';
 
 @Component({
   selector: 'service-units-list',

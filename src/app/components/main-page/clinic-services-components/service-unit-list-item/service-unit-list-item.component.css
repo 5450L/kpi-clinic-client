@@ -1,11 +1,16 @@
+:host {
+  height: 200px;
+  width: 100%;
+}
+
 .unit-list-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 320px;
-  height: 220px;
+  height: 100%;
+  width: 100%;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .unit-list-item-title {

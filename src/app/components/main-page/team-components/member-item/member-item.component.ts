@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Member } from '../../../../models/member.model';
 
 @Component({
   selector: 'member-item',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './member-item.component.css'
 })
 export class MemberItemComponent {
+  @Input({ required: true }) member!: Member
+
+ 
 
 }

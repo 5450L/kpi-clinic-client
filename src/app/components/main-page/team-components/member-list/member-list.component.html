@@ -1,18 +1,15 @@
 <swiper-container
   class=".swiper"
-  slides-per-view="1"
+  slides-per-view="3"
   [loop]="true"
   space-between="16"
   [centered-slides]="true"
   [navigation]="true"
+  [breakpoints]="breakpoints"
 >
+  @for(member of memberList; track member){
   <swiper-slide>
-    <member-item />
+    <member-item [member]="member" />
   </swiper-slide>
-  <swiper-slide>
-    <member-item />
-  </swiper-slide>
-  <swiper-slide>
-    <member-item />
-  </swiper-slide>
+  }
 </swiper-container>

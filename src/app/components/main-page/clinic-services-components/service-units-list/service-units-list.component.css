@@ -1,8 +1,19 @@
 :host {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
   width: 100%;
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  :host {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  :host {
+    grid-template-columns: 1fr;
+  }
 }

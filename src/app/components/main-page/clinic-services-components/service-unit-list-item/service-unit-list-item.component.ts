@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { UnitListItem } from '../../../../models/units/unit.model';
 import { BackgroundImagePipe } from "../../../../pipes/background-image.pipe";
+import { UnitListItem } from '../../../../models/unit.model';
 
 @Component({
   selector: 'service-unit-list-item',
