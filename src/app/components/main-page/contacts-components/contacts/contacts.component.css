@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
+.contacts-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 1200px) {
+  :host {
+    flex-direction: column;
+  }
+}

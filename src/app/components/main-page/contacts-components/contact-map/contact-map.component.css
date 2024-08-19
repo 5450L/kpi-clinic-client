@@ -1,4 +1,17 @@
+:host {
+  height: 100%;
+  max-width: 50%;
+  flex-grow: 1;
+}
+
 .map-container {
-  height: 400px;
-  width: 800px;
+  min-height: 400px;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  :host {
+    max-width: 100%;
+  }
 }
