@@ -1,6 +1,7 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { MemberItemComponent } from "../member-item/member-item.component";
 import { Member } from '../../../../models/member.model';
+import { TeamService } from '../../../../services/team/team.service';
 @Component({
   selector: 'member-list',
   standalone: true,
@@ -9,15 +10,11 @@ import { Member } from '../../../../models/member.model';
   styleUrl: './member-list.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class MemberListComponent {
+export class MemberListComponent implements OnInit {
 
-  memberList = [
-    new Member('New Member1 Name', 'member position'),
-    new Member('New Member2 Name', 'member position'),
-    new Member('New Member4 Name', 'member position'),
-    new Member('New Member5 Name', 'member position'),
-    new Member('New Member6 Name', 'member position'),
-  ]
+  constructor(private teamService: TeamService) { }
+
+  memberList: Member[] = []
 
   breakpoints = {
     1: {
@@ -29,5 +26,9 @@ export class MemberListComponent {
     1024: {
       slidesPerView: 3,
     }
+  }
+
+  ngOnInit() {
+    this.memberList = this.teamService.getMembers()
   }
 }
