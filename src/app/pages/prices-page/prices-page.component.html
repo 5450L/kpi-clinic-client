@@ -1,5 +1,13 @@
 <nav class="units-prices-navigation">
-  @for(item of serviceUnitsList; track item){
-  <button class="price-list-link">{{ item.name }}</button>
+  @for(unit of serviceUnitsList; track unit){
+  <button
+    class="price-list-link"
+    [ngClass]="{ active: unit.symbol == selectedUnit?.symbol }"
+    (click)="selectUnit(unit.symbol)"
+  >
+    {{ unit.shortName }}
+  </button>
   }
 </nav>
+
+<router-outlet />

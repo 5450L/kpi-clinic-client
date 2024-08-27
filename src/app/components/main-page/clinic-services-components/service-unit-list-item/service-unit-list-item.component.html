@@ -1,11 +1,12 @@
 <a
-  [routerLink]="['/prices', { unit: unitListItem.name }]"
+  [routerLink]="['/prices']"
   class="unit-list-item"
   [style]="{
     'background-color': 'rgba(0, 0, 0, 0.4)',
     'background-blend-mode': 'overlay',
     'background-image': unitListItem.image | backgroundImage,
   }"
+  (click)="selectUnit(unitListItem.symbol)"
 >
   <h3 class="unit-list-item-title">
     {{ unitListItem.name }}

@@ -5,5 +5,13 @@
 }
 
 .about-text {
-  font-size: 16px;
+  font-size: 2rem;
+}
+
+main-page-section:nth-of-type(2n) {
+  background-color: rgba(0, 30, 40, 0.05);
+}
+
+main-page-section:nth-of-type(2n-1) {
+  background-color: rgba(240, 180, 50, 0.02);
 }

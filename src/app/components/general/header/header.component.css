@@ -1,0 +1,60 @@
+:host {
+  position: fixed;
+  top: 0;
+  display: flex;
+  height: 7.5rem;
+  width: 100%;
+  padding: 0 10%;
+  background-color: rgb(237, 231, 231);
+  z-index: 10;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.heart {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.heart:hover {
+  animation: heartbeat 6s infinite;
+}
+
+.header-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: rgb(0, 30, 40);
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  flex-grow: 1;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-link:hover {
+  color: rgb(280, 180, 50);
+  background-color: rgb(0, 30, 40);
+}
+
+@keyframes heartbeat {
+  0%,
+  20%,
+  60%,
+  80%,
+  100% {
+    transform: scale(0.8);
+  }
+  10%,
+  30%,
+  70%,
+  90% {
+    transform: scale(1);
+  }
+}

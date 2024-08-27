@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceUnitListItemComponent } from "../service-unit-list-item/service-unit-list-item.component";
-import { UnitListItem } from '../../../../models/unit.model';
+import { Unit } from '../../../../models/unit.model';
 import { ServiceUnitsService } from '../../../../services/service-units/service-units.service';
 
 @Component({
@@ -12,7 +12,7 @@ import { ServiceUnitsService } from '../../../../services/service-units/service-
 })
 export class ServiceUnitsListComponent implements OnInit {
 
-  serviceUnitsList: UnitListItem[] = []
+  serviceUnitsList: Unit[] = []
 
   constructor(private serviceUnitsService: ServiceUnitsService) { }
 

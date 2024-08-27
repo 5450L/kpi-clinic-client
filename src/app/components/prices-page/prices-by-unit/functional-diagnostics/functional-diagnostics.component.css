@@ -1,0 +1,50 @@
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+}
+.price-table th,
+.price-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+}
+.price-table th {
+  background-color: #f4f4f4;
+}
+.price-table .service-name {
+  max-width: 70%;
+  white-space: normal; /* Позволяет тексту переноситься */
+}
+
+.price-table .service-price {
+  white-space: normal;
+}
+
+.service-name {
+  text-align: start;
+}
+
+.service-price {
+  text-align: center;
+  white-space: normal;
+}
+
+.warning {
+  margin: auto 1rem;
+  padding: 2rem 4rem;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  border: 8px solid rgb(255, 187, 0);
+  background-color: rgba(255, 187, 0, 0.546);
+}
+
+@media (max-width: 600px) {
+  .price-table .service-name {
+    width: 70%; /* Ограничиваем ширину ячейки с названием */
+  }
+  .price-table .service-price {
+    max-width: 30%; /* Ширина ячейки с ценой */
+  }
+}
