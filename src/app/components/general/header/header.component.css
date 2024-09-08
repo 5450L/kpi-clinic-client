@@ -4,7 +4,6 @@
   display: flex;
   height: 7.5rem;
   width: 100%;
-  padding: 0 10%;
   background-color: rgb(237, 231, 231);
   z-index: 10;
 }
@@ -12,16 +11,9 @@
 .header-navigation {
   display: flex;
   align-items: center;
+  padding: 0 10%;
   width: 100%;
-}
-
-.heart {
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.heart:hover {
-  animation: heartbeat 6s infinite;
+  margin: 0 auto;
 }
 
 .header-link {
@@ -43,18 +35,18 @@
   background-color: rgb(0, 30, 40);
 }
 
-@keyframes heartbeat {
-  0%,
-  20%,
-  60%,
-  80%,
-  100% {
-    transform: scale(0.8);
+burger-button {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .header-link {
+    display: none;
   }
-  10%,
-  30%,
-  70%,
-  90% {
-    transform: scale(1);
+
+  burger-button {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
   }
 }

@@ -1,13 +1,9 @@
-<img
-  src="/assets/images/common/logo.png"
-  alt="KPI-clinic"
-  class="heart"
-  (click)="goToMain()"
-/>
-
 <nav class="header-navigation">
+  <app-main-logo (click)="goToMain()" />
   <a href="#about" class="header-link">Про клініку</a>
   <a href="#services" class="header-link">Послуги</a>
   <a href="#team" class="header-link">Команда</a>
   <a href="#contacts" class="header-link">Контакти</a>
 </nav>
+
+<burger-button (click)="openBurgerMenu()"/>

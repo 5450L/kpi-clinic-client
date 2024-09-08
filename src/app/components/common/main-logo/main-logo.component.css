@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.heart {
+  width: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+:host:hover .heart {
+  animation: heartbeat 4s infinite;
+}
+
+.logo-text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+@keyframes heartbeat {
+  0%,
+  50%,
+  100% {
+    transform: scale(0.8);
+  }
+
+  20%,
+  80% {
+    transform: scale(0.9);
+  }
+
+  10%,
+  30%,
+  70%,
+  90% {
+    transform: scale(1);
+  }
+}
