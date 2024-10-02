@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './page-title.component.css',
 })
 export class PageTitleComponent {
-  title: string = 'Название';
+  title: string = 'Університетська Клініка "ХПІ"';
 }
