@@ -25,6 +25,12 @@
   height: 100%;
 }
 
+.home-section {
+  width: 100vw;
+  height: 500px;
+  background-image: url("https://img.goodfon.ru/original/1920x1200/e/74/fon-seryi-gradient.jpg");
+}
+
 main-page-section:nth-of-type(2n) {
   background-color: rgba(0, 30, 40, 0.05);
 }

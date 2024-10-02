@@ -5,9 +5,9 @@
   justify-content: center;
   align-items: center;
   gap: 32px;
-  padding: 40px 0;
+  padding: 100px 0;
   width: 100%;
-  min-height: 100dvh;
+  /* min-height: 100dvh; */
 }
 
 .section-title {
