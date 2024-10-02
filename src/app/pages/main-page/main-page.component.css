@@ -28,7 +28,10 @@
 .home-section {
   width: 100vw;
   height: 500px;
-  background-image: url("https://img.goodfon.ru/original/1920x1200/e/74/fon-seryi-gradient.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.5);
+  background-image: url("https://oir.mobi/uploads/posts/2022-08/1661446191_5-oir-mobi-p-krasivii-fon-meditsina-krasivo-5.png");
 }
 
 main-page-section:nth-of-type(2n) {
