@@ -2,19 +2,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 15%;
 }
 
 .about-text {
   font-size: 1.3rem;
+  text-align: left;
+  max-width: 400px;
 }
 
 .img {
   width: 100%;
-  max-width: 200px;
-  height: 400px;
   background-color: black;
   border-radius: 8px;
-  margin-left: 1.5rem;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  height: 100%;
 }
 
 main-page-section:nth-of-type(2n) {
