@@ -18,6 +18,7 @@ body {
   font-style: normal;
   line-height: 1.5;
   scroll-behavior: smooth;
+  color: rgb(9, 29, 41);
 }
 
 ol,
@@ -45,7 +46,7 @@ table {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(0, 30, 40);
+  background-color: rgb(12, 33, 42);
   border-radius: 10px;
 }
 

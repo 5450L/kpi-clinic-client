@@ -19,7 +19,7 @@
 }
 
 .header-link {
-  color: rgb(0, 30, 40);
+  color: rgb(12, 33, 42);
   font-size: 1.2rem;
   font-weight: 700;
   text-decoration: none;
@@ -38,6 +38,7 @@
   flex-direction: column;
   align-items: flex-end;
   margin-left: auto;
+  color: rgb(9, 29, 41);
 }
 
 burger-button {
