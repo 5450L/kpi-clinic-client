@@ -12,12 +12,12 @@
 }
 
 .img {
-  min-width: 600px;
+  min-width: 700px;
   border-radius: 8px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("https://my-clinica.com/upload/iblock/97f/97f592f694b15aeb8cc97a80be568e12.jpg");
+  background-image: url("https://apartmentinteriors.ru/wp-content/uploads/dizayn-interyera-kliniki-muse-01.jpg");
 }
 
 .about-section {
