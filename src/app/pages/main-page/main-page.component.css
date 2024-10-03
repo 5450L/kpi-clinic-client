@@ -2,10 +2,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 15%;
 }
 
 .about-text {
-  font-size: 2rem;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 2;
+}
+
+.img {
+  min-width: 700px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("https://apartmentinteriors.ru/wp-content/uploads/dizayn-interyera-kliniki-muse-01.jpg");
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.home-section {
+  width: 100vw;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.8);
+  background-image: url("https://oir.mobi/uploads/posts/2022-08/1661446191_5-oir-mobi-p-krasivii-fon-meditsina-krasivo-5.png");
 }
 
 main-page-section:nth-of-type(2n) {
