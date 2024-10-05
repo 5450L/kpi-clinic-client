@@ -10,7 +10,4 @@ import { Member } from '../../../../models/member.model';
 })
 export class MemberItemComponent {
   @Input({ required: true }) member!: Member
-
- 
-
 }
