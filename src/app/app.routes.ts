@@ -5,24 +5,32 @@ import { VertebrologyComponent } from './components/prices-page/prices-by-unit/v
 import { ServiceUnitsSymbols } from './enums/service-units';
 import { PsychologyComponent } from './components/prices-page/prices-by-unit/psychology/psychology.component';
 import { FunctionalDiagnosticsComponent } from './components/prices-page/prices-by-unit/functional-diagnostics/functional-diagnostics.component';
+import { TeamPageComponent } from './pages/team-page/team-page.component';
 
 export const routes: Routes = [
-    { path: '', component: MainPageComponent, pathMatch: 'full' },
-    {
-        path: 'prices', component: PricesPageComponent, children: [
-            {
-                path: ServiceUnitsSymbols.Vertebrology,
-                component: VertebrologyComponent,
-            },
-            {
-                path: ServiceUnitsSymbols.Psychology,
-                component: PsychologyComponent,
-            },
-            {
-                path: ServiceUnitsSymbols.FunctionalDiagnostics,
-                component: FunctionalDiagnosticsComponent,
-            },
-        ]
-    },
-    { path: '**', redirectTo: '' }
+  { path: '', component: MainPageComponent, pathMatch: 'full' },
+  {
+    path: 'prices',
+    component: PricesPageComponent,
+    children: [
+      {
+        path: ServiceUnitsSymbols.Vertebrology,
+        component: VertebrologyComponent,
+      },
+      {
+        path: ServiceUnitsSymbols.Psychology,
+        component: PsychologyComponent,
+      },
+      {
+        path: ServiceUnitsSymbols.FunctionalDiagnostics,
+        component: FunctionalDiagnosticsComponent,
+      },
+      {
+        path: ServiceUnitsSymbols.Ginecology,
+        component: FunctionalDiagnosticsComponent,
+      },
+    ],
+  },
+  { path: 'team', component: TeamPageComponent, pathMatch: 'full' },
+  { path: '**', redirectTo: '' },
 ];

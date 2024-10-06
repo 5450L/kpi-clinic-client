@@ -1,4 +1,9 @@
-p {
+.member-photo {
+  width: 255px;
+  height: 365px;
+}
+
+.member-position {
   color: aliceblue;
   background-color: rgb(58, 57, 57);
   text-align: center;

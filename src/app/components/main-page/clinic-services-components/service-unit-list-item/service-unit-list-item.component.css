@@ -11,10 +11,18 @@
   width: 100%;
   background-position: center;
   background-size: cover;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.unit-list-item:hover {
+  -webkit-box-shadow: 8px 6px 12px 1px rgba(192, 199, 214, 0.94);
+  -moz-box-shadow: 8px 6px 12px 1px rgba(192, 199, 214, 0.94);
+  box-shadow: 8px 6px 12px 1px rgba(192, 199, 214, 0.94);
 }
 
 .unit-list-item-title {
-  max-width: 70%;
+  width: 70%;
   font-family: muller, sans-serif;
   font-weight: 700;
   font-size: 14px;
