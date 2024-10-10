@@ -1,10 +1,25 @@
 .member-photo {
-  width: 255px;
-  height: 365px;
+  width: 180px;
+  height: 250px;
+  margin-bottom: 10px;
+  object-fit: cover;
 }
 
-.member-position {
-  color: aliceblue;
-  background-color: rgb(58, 57, 57);
+.member-info {
   text-align: center;
+}
+
+.member-experience,
+.member-position {
+  margin: 2px 0;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .swiper {
+    height: 250px;
+  }
 }

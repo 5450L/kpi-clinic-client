@@ -1,6 +1,6 @@
 <swiper-container
   class="swiper"
-  slides-per-view="4"
+  slides-per-view="3"
   [loop]="true"
   space-between="16"
   [centered-slides]="true"
@@ -9,7 +9,7 @@
 >
   @for(member of memberList; track member){
   <swiper-slide class="swiper-item">
-    <member-item [member]="member" />
+    <member-item [member]="member" class="member-item" />
   </swiper-slide>
   }
 </swiper-container>

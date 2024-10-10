@@ -7,7 +7,7 @@ import { TeamService } from '../../../../services/team/team.service';
   standalone: true,
   imports: [MemberItemComponent],
   templateUrl: './member-list.component.html',
-  styleUrl: './member-list.component.css',
+  styleUrls: ['./member-list.component.css'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class MemberListComponent implements OnInit {
@@ -22,10 +22,10 @@ export class MemberListComponent implements OnInit {
     640: {
       slidesPerView: 2,
     },
-    768: {
+    1024: {
       slidesPerView: 3,
     },
-    1024: {
+    1280: {
       slidesPerView: 4,
     },
   };
