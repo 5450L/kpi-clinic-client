@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 15%;
+  padding: 0 32px;
 }
 
 .about-text {
@@ -27,13 +27,4 @@
   width: 100%;
   height: 100%;
   padding: 5px;
-}
-
-.home-section {
-  width: 100vw;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: brightness(0.8);
-  background-image: url("https://oir.mobi/uploads/posts/2022-08/1661446191_5-oir-mobi-p-krasivii-fon-meditsina-krasivo-5.png");
 }

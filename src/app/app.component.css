@@ -1,3 +1,7 @@
 :host {
   position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.87);
 }
