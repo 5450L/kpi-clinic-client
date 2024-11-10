@@ -1,14 +1,17 @@
-<a
-  [routerLink]="['/prices']"
-  class="unit-list-item"
-  [style]="{
-    'background-color': 'rgba(0, 0, 0, 0.4)',
-    'background-blend-mode': 'overlay',
-    'background-image': unitListItem.image | backgroundImage,
-  }"
-  (click)="selectUnit(unitListItem.symbol)"
->
-  <h3 class="unit-list-item-title">
-    {{ unitListItem.name }}
-  </h3>
+<a [routerLink]="['/prices']" class="unit-list-item">
+  <img class="unit-image" [src]="unitListItem.image" />
+
+  <div class="unit-title-description-wrap">
+    <h4 class="unit-title">
+      {{ unitListItem.shortName }}
+    </h4>
+
+    <p class="unit-description">
+      {{ unitListItem.name }}
+    </p>
+  </div>
+
+  <button class="see-detail-button" (click)="selectUnit(unitListItem.symbol)">
+    Прайс
+  </button>
 </a>

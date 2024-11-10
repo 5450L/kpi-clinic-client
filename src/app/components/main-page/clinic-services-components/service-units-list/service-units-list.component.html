@@ -1,3 +1,17 @@
-@for(item of serviceUnitsList; track item){
-<service-unit-list-item [unitListItem]="item" />
-}
+<div class="title-wrap">
+  <h1 class="title">Послуги</h1>
+  <p class="description">!!Загальний опис послуг!!</p>
+</div>
+
+<div class="service-list-wrap">
+  <img
+    class="services-image"
+    src="/assets/images/decorative/services-image.png"
+  />
+
+  <div class="service-list">
+    @for(item of serviceUnitsList; track item){
+    <service-unit-list-item [unitListItem]="item" />
+    }
+  </div>
+</div>
