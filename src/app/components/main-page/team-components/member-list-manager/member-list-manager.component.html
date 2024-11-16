@@ -1,0 +1,10 @@
+<div class="chosen-unit">
+  <h3 class="chosen-unit-title">{{ selectedOption.name }}</h3>
+  <p class="chosen-unit-description">{{ selectedOption.description }}</p>
+</div>
+
+<ul class="units">
+  @for(option of optionsToSelect; track option){
+  <li class="unit-option" (click)="selectOption(option)">{{ option.name }}</li>
+  }
+</ul>

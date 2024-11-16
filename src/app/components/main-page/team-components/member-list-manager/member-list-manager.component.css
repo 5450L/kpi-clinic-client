@@ -1,0 +1,52 @@
+:host {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.chosen-unit-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(0, 87, 155);
+}
+
+.chosen-unit-description {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: fit-content;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.chosen-unit-description::after {
+  content: "";
+  height: 6px;
+  width: 50%;
+  border-radius: 20px;
+  background-color: rgb(3, 172, 242);
+}
+
+.units {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.unit-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.54);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.unit-option:hover {
+  border-color: transparent;
+  background-color: rgb(3, 172, 242);
+  color: rgb(255, 255, 255);
+}
