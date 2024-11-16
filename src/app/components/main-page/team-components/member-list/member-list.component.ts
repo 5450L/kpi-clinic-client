@@ -31,6 +31,10 @@ export class MemberListComponent implements OnInit {
     },
   };
 
+  autoplay = {
+    delay: 1000,
+  };
+
   ngOnInit() {
     this.memberList = this.teamService.getMembers();
   }

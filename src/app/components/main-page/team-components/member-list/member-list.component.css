@@ -11,7 +11,6 @@
   width: 100%;
   overflow: hidden;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .swiper-item {
@@ -21,12 +20,13 @@
   border-radius: 12px;
   background-color: rgb(245, 245, 245);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(0.95);
   transition: transform 0.3s;
   padding: 5px 0;
 }
 
 .swiper-item:hover {
-  transform: scale(1.05);
+  transform: scale(0.98);
 }
 
 .member-item {

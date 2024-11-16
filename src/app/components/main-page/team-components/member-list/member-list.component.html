@@ -2,11 +2,10 @@
 
 <swiper-container
   class="swiper"
-  slides-per-view="3"
+  autoplay="true"
   [loop]="true"
-  space-between="16"
+  space-between="0"
   [centered-slides]="true"
-  [navigation]="true"
   [breakpoints]="breakpoints"
 >
   @for(member of memberList; track member){
