@@ -11,10 +11,8 @@ import { MemberListManagerComponent } from '../member-list-manager/member-list-m
   styleUrls: ['./member-list.component.css'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class MemberListComponent implements OnInit {
+export class MemberListComponent {
   constructor(private teamService: TeamService) {}
-
-  memberList: Member[] = [];
 
   breakpoints = {
     1: {
@@ -35,7 +33,7 @@ export class MemberListComponent implements OnInit {
     delay: 1000,
   };
 
-  ngOnInit() {
-    this.memberList = this.teamService.getMembers();
+  get memberList() {
+    return this.teamService.getMembersByUnit();
   }
 }

@@ -20,3 +20,9 @@ export class Member {
     this.photo = photo;
   }
 }
+
+export type UnitManegerListOption = {
+  name: string;
+  description: string;
+  symbol?: ServiceUnitsSymbols;
+};

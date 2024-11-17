@@ -1,13 +1,7 @@
 import { Component } from '@angular/core';
-import { ServiceUnitsService } from '../../../../services/service-units/service-units.service';
-import { ServiceUnitsSymbols } from '../../../../enums/service-units';
 import { Unit } from '../../../../models/unit.model';
-
-type UnitManegerListOption = {
-  name: string;
-  description: string;
-  symbol?: ServiceUnitsSymbols;
-};
+import { UnitManegerListOption } from '../../../../models/member.model';
+import { TeamService } from '../../../../services/team/team.service';
 
 @Component({
   selector: 'member-list-manager',
@@ -17,38 +11,17 @@ type UnitManegerListOption = {
   styleUrl: './member-list-manager.component.css',
 })
 export class MemberListManagerComponent {
-  allUnitsOption: UnitManegerListOption = {
-    name: 'Всі співробітники',
-    description: 'Всі співробітники',
-  };
+  constructor(private teamService: TeamService) {}
 
-  memberListManagerOptions: UnitManegerListOption[] = [this.allUnitsOption];
-  selectedOption: UnitManegerListOption = this.allUnitsOption;
-
-  constructor(private serviceUnitsService: ServiceUnitsService) {}
-
-  ngOnInit(): void {
-    this.fillManagerOptions(
-      this.serviceUnitsService.getServiceUnits(),
-      this.memberListManagerOptions
-    );
+  get selectedOption() {
+    return this.teamService.getSelectedOption();
   }
 
   get optionsToSelect() {
-    return this.memberListManagerOptions.filter(
-      ({ name }) => name != this.selectedOption.name
-    );
+    return this.teamService.getOptionsToSelect();
   }
 
   selectOption(option: UnitManegerListOption) {
-    this.selectedOption = option;
-  }
-
-  fillManagerOptions(units: Unit[], optionsArray: UnitManegerListOption[]) {
-    optionsArray.push(
-      ...units.map(({ shortName, description, symbol }) => {
-        return { name: shortName, description, symbol };
-      })
-    );
+    this.teamService.selectOption(option);
   }
 }
