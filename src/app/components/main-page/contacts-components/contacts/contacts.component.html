@@ -15,8 +15,13 @@
     <li class="contact">
       <h4 class="contact-title">Телефони:</h4>
       <p class="contact-text">
-        <a class="phone-number" href="tel:+1234567890">(123) 456-7890</a> |
-        <a class="phone-number" href="tel:+1234567890">(123) 456-7890</a>
+        <a class="phone-number" [href]="'tel:' + mobileNumber">
+          {{ mobileNumber | phoneFormatter }}
+        </a>
+        |
+        <a class="phone-number" [href]="'tel:' + landlineNumber">
+          {{ landlineNumber | phoneFormatter }}
+        </a>
       </p>
     </li>
 
@@ -25,9 +30,26 @@
       <p class="contact-text">
         <a
           class="mail"
-          href="mailto:info@example.com?subject=Inquiry&body=Hello, I would like to know more about your services."
+          href="mailto:Hpi.med.clinic.ua@gmail.com?subject=Inquiry&body=Вітаю! Хочу детальніше дізнатися про ваші послуги."
         >
-          info&#64;example.com
+          Hpi.med.clinic.ua&#64;gmail.com
+        </a>
+      </p>
+    </li>
+
+    <li class="contact social-media">
+      <h4 class="contact-title">Соціальні мережі:</h4>
+      <p class="contact-text">
+        <a
+          class="link"
+          href="https://www.instagram.com/klinikauniversitetska?igsh=MWRuN2k1Y2NsMXhmaw=="
+          target="_blank"
+        >
+          <img
+            class="social-media-icon"
+            src="/assets/images/social-media/instagram.png"
+            alt="Instagram"
+          />
         </a>
       </p>
     </li>

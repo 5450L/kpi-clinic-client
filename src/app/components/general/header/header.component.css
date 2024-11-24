@@ -58,3 +58,9 @@ burger-button {
     padding: 1rem;
   }
 }
+
+@media (max-width: 600px) {
+  :host {
+    padding: 24px 16px;
+  }
+}

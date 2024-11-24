@@ -1,5 +1,10 @@
 <a [routerLink]="['/prices']" class="unit-list-item">
-  <img class="unit-image" [src]="unitListItem.image" />
+  <div
+    class="unit-image"
+    [style]="{
+    'background-image': unitListItem.image | backgroundImage,
+  }"
+  ></div>
 
   <div class="unit-title-description-wrap">
     <h4 class="unit-title">

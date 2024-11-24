@@ -26,8 +26,8 @@ export class TeamService {
       photo: 'assets/images/members/valeria-ponomareva.png',
     }),
     new Member({
-      name: 'Радишевська Лілія Марківна',
-      position: 'Акуше́р-гінеко́лог',
+      name: 'Радишевська Лілія',
+      position: 'Акушер-гінеколог',
       unit: ServiceUnitsSymbols.Ginecology,
       photo: 'assets/images/members/radyshevska-lilia.png',
     }),

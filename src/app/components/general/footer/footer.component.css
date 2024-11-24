@@ -2,5 +2,12 @@
   display: flex;
   width: 100%;
   margin: 80px 0 0 0;
-  padding: 0 32px;
+  padding: 0 80px;
+}
+
+@media (max-width: 600px) {
+  :host {
+    margin: 40px 0 0 0;
+    padding: 0 16px;
+  }
 }

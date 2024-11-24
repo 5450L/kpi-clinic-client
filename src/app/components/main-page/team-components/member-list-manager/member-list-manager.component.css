@@ -8,7 +8,7 @@
 .chosen-unit-title {
   font-size: 28px;
   font-weight: 700;
-  color: rgb(0, 87, 155);
+  color: rgb(3, 172, 242);
 }
 
 .chosen-unit-description {
@@ -39,8 +39,8 @@
   align-items: center;
   padding: 8px 14px;
   border-radius: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.54);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -49,4 +49,10 @@
   border-color: transparent;
   background-color: rgb(3, 172, 242);
   color: rgb(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+  :host {
+    gap: 16px;
+  }
 }

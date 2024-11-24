@@ -20,11 +20,15 @@
 .unit-image {
   height: 50%;
   border-radius: 12px 12px 40px 5px;
+  background-size: cover;
 }
 
 .unit-title-description-wrap {
-  height: 100%;
   padding: 16px;
+}
+
+.unit-title {
+  font-size: 22px;
 }
 
 .see-detail-button {
@@ -36,7 +40,7 @@
   padding: 10px 24px;
   border: none;
   border-radius: 12px 0 12px 0;
-  background-color: #4caf50;
+  background-color: #03acf2;
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
@@ -45,6 +49,6 @@
 }
 
 .see-detail-button:hover {
-  background-color: #4caf4fa6;
+  background-color: #03aaf289;
   color: #ffffff96;
 }

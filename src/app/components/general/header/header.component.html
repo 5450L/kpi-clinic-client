@@ -5,7 +5,13 @@
   <a href="#team" class="header-link">Команда</a>
   <a href="#contacts" class="header-link">Контакти</a>
   <div class="tell">
-    <a href="tel:+380123456789">+38 (012) 345-67-89</a>
+    <div class="phone-numbers">
+      <a [href]="'tel:' + mobileNumber">{{ mobileNumber | phoneFormatter }}</a>
+      |
+      <a [href]="'tel:' + landlineNumber">
+        {{ landlineNumber | phoneFormatter }}
+      </a>
+    </div>
     <p>вул. Григорія Сковороди 79/1</p>
   </div>
 </nav>
