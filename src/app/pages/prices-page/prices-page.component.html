@@ -1,3 +1,4 @@
+@if (serviceUnitsList) {
 <nav class="units-prices-navigation">
   @for(unit of serviceUnitsList; track unit){
   <button
@@ -9,5 +10,5 @@
   </button>
   }
 </nav>
-
+}
 <router-outlet />

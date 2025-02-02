@@ -9,7 +9,7 @@ import { ServiceUnitsService } from '../service-units/service-units.service';
 export class TeamService {
   private members: Member[] = [
     new Member({
-      name: 'Наталья Сідоренко',
+      name: 'Наталія Сідоренко',
       position: 'Медичний реєстратор',
       photo: 'assets/images/members/natalia-sidorenko.png',
     }),
@@ -48,6 +48,11 @@ export class TeamService {
       position: 'Масажист',
       unit: ServiceUnitsSymbols.Vertebrology,
       photo: 'assets/images/members/yakovenko-stanislav.png',
+    }),
+    new Member({
+      name: 'Вишняков Костянтин',
+      position: 'Лікар УЗД',
+      unit: ServiceUnitsSymbols.FunctionalDiagnostics,
     }),
     new Member({
       name: "Олександра Астаф'єва",
